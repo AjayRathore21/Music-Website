@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- I used the font awesome CDN link for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <!-- I divided the layout into grids: menu, carousel, latest releases, artists, playlists, music players. -->
+    <div class="grid-container">
+        <div class="item1">
+            <div class="menu-header">
+                <div class="profilelogo">
+                    <img src="play.png" width="100" height="100">
+
+                    <h4 class="profilefav">Favourites</h4>
+                </div>
+                <div class="profile-menu">
+                    <div class="form">
+                        <button class="btn1" type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Search..">
+                        <button class="btn1" type="submit"><i class="fa fa-microphone"></i></button>
+                    </div>
+
+                    <p><i class="fa fa-bell-o"></i></p>
+                    <div>
+                        <img src="ajayrathore.jpg" width="80" height="80">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="item2">
+            <div class="carousel-main">
+
+                <div class="carousel-handler">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <div class="carousel-image">
+                        <img class="imagencs cursor" src="images\hip-hop.webp" alt="Image1" width="300px"
+                            height="200px">
+                    </div>
+                    <div class="carousel-image">
+                        <img class="imagencs cursor" src="images\love-hit.webp" alt="Image2" width="300px"
+                            height="200px">
+                    </div>
+                    <div class="carousel-image">
+                        <img class="imagencs cursor" src="images\new-release.webp" alt="Image3" width="300px"
+                            height="200px">
+                    </div>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+            <div class="column-card">
+                <h3>Latest Release</h3>
+                <div class="card-latest-row">
+                    <div class="card-row">
+                        <img src="images\lr-1.jpg" alt="latest1" width="150" height="150">
+                        <div class="song-latest-title">
+                            <p>Khud Taanu</p>
+                            <p class="song-latest-title-date">MAR 2 2021</p>
+                        </div>
+                        <div class="song-latest-title-time">
+                            <div class="popup-card">...
+                                <div class="dropdown-content-card">
+                                    <p><i class="fa fa-play"></i> Play</p>
+                                    <p><i class="fa fa-plus"></i> Add to Queue</p>
+                                    <p><i class="fa fa-list"></i> Add to Favourites</p>
+                                    <p><i class="fa fa-info"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p class="dot">4:04</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <img src="images\lr-2.webp" alt="latest2" width="150" height="150">
+                        <div class="song-latest-title">
+                            <p>Radhae</p>
+                            <p class="song-latest-title-date">MAR 20 2021</p>
+                        </div>
+                        <div class="song-latest-title-time">
+                            <div class="popup-card">...
+                                <div class="dropdown-content-card">
+                                    <p><i class="fa fa-play"></i> Play</p>
+                                    <p><i class="fa fa-plus"></i> Add to Queue</p>
+                                    <p><i class="fa fa-list"></i> Add to Favourites</p>
+                                    <p><i class="fa fa-info"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p class="dot">4:04</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <img src="images\lr-3.jpg" alt="latest3" width="150" height="150">
+                        <div class="song-latest-title">
+                            <p>Madhayna</p>
+                            <p class="song-latest-title-date">MAR 26 2021</p>
+                        </div>
+                        <div class="song-latest-title-time">
+                            <div class="popup-card">...
+                                <div class="dropdown-content-card">
+                                    <p><i class="fa fa-play"></i> Play</p>
+                                    <p><i class="fa fa-plus"></i> Add to Queue</p>
+                                    <p><i class="fa fa-list"></i> Add to Favourites</p>
+                                    <p><i class="fa fa-info"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p class="dot">5:04</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="item4">
+            <h3 class="popularartistsname">Popular Artists</h3>
+            <div class="artists-row">
+                <div class="artist-col">
+                    <img class="artist-image" src="images\arijit.webp" alt="artist1" width="160"
+                        height="160">
+                    <p><a href="detail.html">Best of Arijit</a></p>
+                </div>
+                <div class="artist-col">
+                    <img class="artist-image" src="images\b praak.webp" alt="artist2" width="160" height="160">
+                    <p>Best of B Praak</p>
+                </div>
+                <div class="artist-col">
+                    <a href="detail.html"><img class="artist-image" src="images\badshah.webp" alt="artist3"
+                            width="160" height="160"></a>
+                    <p>Best of Badshah</p>
+                </div>
+                <div class="artist-col">
+                    <img class="artist-image" src="images\bts.webp" alt="artist4" width="160"
+                        height="160">
+                    <p>Best of BTS</p>
+                </div>
+                <div class="artist-col">
+                    <img class="artist-image" src="images\neha kakker.webp" alt="artist2" width="160" height="160">
+                    <p>Best of Neha  Kakker</p>
+                </div>
+            </div>
+        </div>
+        <div class="item5">
+            <div class="playlist-content">
+                <div class="playlist-column">
+                    <div class="playlist-head-title" style="background-color: white;border: none;">
+                        <h3>
+                            My Playlist
+                        </h3>
+                        <div class="popup">Queue
+                            <div class="dropdown-content">
+                                <p>PlayLists</p>
+                                <p>Favourite Songs</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="playlist-head-title">
+                        <p class="space-play">01</p>
+                        <img src="images\pachtaoge.webp" alt="" width="100" height="100">
+                        <div class="space-play">
+                            <p>pachaoge</p>
+                            <p class="song-latest-title-date">Arijit</p>
+                        </div>
+                        <p><i class="fa fa-heart-o"></i></p>
+                    </div>
+                    <div class="playlist-head-title">
+                        <p class="space-play">02</p>
+                        <img src="images\lr-3.jpg" alt="" width="100" height="100">
+                        <div class="space-play">
+                            <p>Madhayna</p>
+                            <p class="song-latest-title-date">Rahul Vadiya</p>
+                        </div>
+                        <p><i class="fa fa-heart-o"></i></p>
+                    </div>
+                    <div class="playlist-head-title">
+                        <p class="space-play">03</p>
+                        <img src="images\lr-1.jpg" alt="" width="100" height="100">
+                        <div class="space-play">
+                            <p>khad taanu</p>
+                            <p class="song-latest-title-date">Neha kakker</p>
+                        </div>
+                        <p><i class="fa fa-heart-o"></i></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="item6">
+            <hr>
+            <div class="musicplayer-row">
+                <div class="songtitle-row">
+                    <img src="images\pachtaoge.webp" alt="songs" width="100" height="100">
+
+                    <div class="songtitle-col">
+                        <p>pachtaoge</p>
+                        <p class="singertitle">Best of Arijit</p>
+                    </div>
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-remove"></i>
+                </div>
+                <div class="tuner-col">
+                    <div class="tunerplay-row">
+                        <i class="playicon fa fa-random fa-1x"></i>
+                        <i class="playicon fa fa-step-backward fa-1x"></i>
+                        <i class="playiconmain fa fa-play-circle-o fa-1x"></i>
+                        <i class="playicon fa fa-step-forward fa-1x"></i>
+                        <i class="playicon fa fa-refresh fa-1x "></i>
+                    </div>
+                    <div class="timerplay-row">
+                        <span class="timeplay">01:50</span><input type="range" min="1" max="100" value="30"
+                            class="seek_slider">
+                        <span class="timeplay">05:00</span>
+                    </div>
+                </div>
+                <div class="volume-row">
+                    <i class="volumeicon fa fa-download fa-1x "></i>
+                    <i class="volumeicon fa fa-laptop fa-1x "></i>
+                    <i class="volumeicon fa fa-volume-up fa-1x "></i>
+
+                    <input type="range" min="1" max="100" value="30" class="vol_slider">
+                    <i class="volumeicon fa fa-arrows fa-1x "></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Carousel function -->
+    <script>
+        let slideIndex = 2
+        showSlides(slideIndex)
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n)
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n)
+        }
+
+        function showSlides(n) {
+            let i;
+            let dots = document.getElementsByClassName("imagencs");
+            if (n > dots.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = dots.length }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "")
+            }
+            dots[slideIndex - 1].style.display = "block"
+            dots[slideIndex - 1].className += " active"
+        }
+    </script>
+</body>
+
+</html>
